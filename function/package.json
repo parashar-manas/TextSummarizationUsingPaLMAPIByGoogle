@@ -1,0 +1,14 @@
+{
+  "name": "text-summarization-using-palm-api-by-google",
+  "version": "1.0.0",
+  "description": "Text summarization using PaLM API by Google.",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Manas Parashar",
+  "license": "Open",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "jquery": "^3.6.0"
+  }
+}
