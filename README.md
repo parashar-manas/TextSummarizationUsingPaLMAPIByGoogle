@@ -1,4 +1,4 @@
-# Article Summarization App  
+# Text Summarization Using PaLM API By Google
 
 A Streamlit-Powered Interface for Generative AI Text Summaries
 This project delivers an interactive and lightweight article-summarization platform built on **Google Generative AI (PaLM)** and **Streamlit**. The application enables users to input raw text or article content and generate concise, high-quality summaries with configurable parameters. The design philosophy emphasizes modularity, operational clarity, and seamless user experience.
