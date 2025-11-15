@@ -1,49 +1,30 @@
-# Text Summarization Using PaLM API By Google
-
-A Streamlit-Powered Interface for Generative AI Text Summaries
-This project delivers an interactive and lightweight article-summarization platform built on **Google Generative AI (PaLM)** and **Streamlit**. The application enables users to input raw text or article content and generate concise, high-quality summaries with configurable parameters. The design philosophy emphasizes modularity, operational clarity, and seamless user experience.
-
----
+# Text Summarization Using PaLM API by Google
 
 ## Overview  
+This solution enables streamlined, generative text summarization through a lightweight Streamlit interface integrated with Google’s PaLM API. The platform supports configurable model parameters, real-time inference, and a clean operational workflow suited for research acceleration, editorial pipelines, and content-intelligence use cases.
 
-The application provides a streamlined interface for:
+## Key Features  
+- Interactive summarization interface with rich text input  
+- Adjustable temperature for controlling generation creativity  
+- Configurable maximum output tokens for summary length management  
+- Model selection for flexible API utilization  
+- Modular code separation between UI and generation logic  
+- Secure API key handling via environment variables  
 
-- Dynamic article summarization  
-- Parameter tuning (temperature and token limits)  
-- Model selection  
-- Real-time generative output using PaLM API  
+## Dataset Requirement  
+This application does not require a dataset. Users directly input raw text or article content into the interface for summarization. Only an active **Google Generative AI API key** is needed for inference.
 
-This enables high-leverage use cases such as research acceleration, content distillation, and editorial workflows.
+## Workflow Architecture  
+1. Load environment variables and initialize PaLM API credentials.  
+2. Render Streamlit UI components for text input, parameter controls, and model selection.  
+3. Capture user input and configuration settings.  
+4. Execute summarization through the PaLM text-generation endpoint.  
+5. Display generated summaries dynamically in the Streamlit interface.  
+6. Handle errors, empty inputs, or invalid configurations gracefully.  
 
----
+## Installation  
 
-## Technology Stack  
-
-| Component | Purpose |
-|----------|---------|
-| **Streamlit** | Front-end UI and app runtime |
-| **Google Generative AI (PaLM)** | Text-generation engine |
-| **python-dotenv** | Secure environment variable management |
-| **dotenv + OS** | API key provisioning |
-| **Python 3.x** | Primary execution environment |
-
----
-
-## Features  
-
-- **Interactive summarization UI** with text-area input  
-- **Temperature tuning** to adjust creativity  
-- **Configurable maximum output tokens** for concise or detailed summaries  
-- **Model selection dropdown** for flexible API usage  
-- **Clean function architecture** separating UI and generation logic  
-- **Secure API key handling** through environment variables  
-
----
-
-## Installation & Setup  
-
-### 1. Clone the repository
+### 1. Clone the repository  
 ```bash
 git clone <your-repo-url>
 cd <project-folder>
